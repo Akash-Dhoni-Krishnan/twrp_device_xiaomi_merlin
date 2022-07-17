@@ -27,16 +27,15 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 # Inherit from merlin device
 $(call inherit-product, device/xiaomi/merlin/device.mk)
 
-# Inherit some common TWRP stuff.
-$(call inherit-product, vendor/twrp/config/common.mk)
-#$(call inherit-product, vendor/twrp/config/gsm.mk)
+# Inherit some common Omni stuff.
+$(call inherit-product, vendor/omni/config/common.mk)
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := merlin
-PRODUCT_NAME := twrp_merlin
-PRODUCT_BRAND := xiaomi
+PRODUCT_NAME := omni_merlin
+PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi Note 9
-PRODUCT_MANUFACTURER := xiaomi
+PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_RELEASE_NAME := Redmi Note 9
 
 # Fastbootd

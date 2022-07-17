@@ -17,4 +17,3 @@
 #
 
 LOCAL_PATH := device/xiaomi/merlin
-

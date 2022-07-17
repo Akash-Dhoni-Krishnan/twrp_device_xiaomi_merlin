@@ -2,6 +2,7 @@ ro.sys.usb.mtp.whql.enable=0
 ro.sys.usb.storage.type=mtp
 sys.usb.controller=musb-hdrc
 persist.sys.isUsbOtgEnabled=true
+ro.boot.dynamic_partitions=true
 ro.vendor.mediatek.platform=MT6768
 ro.hardware=mt6768
 ro.secure=0
