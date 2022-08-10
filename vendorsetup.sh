@@ -4,7 +4,7 @@ export FOX_BUILD_TYPE="Untested" # Modify in the future
 export FOX_BUGGED_AOSP_ARB_WORKAROUND="1546300800" # Tue Jan 1 2019 00:00:00 GMT
 export FOX_USE_TWRP_RECOVERY_IMAGE_BUILDER=1
 export TW_DEFAULT_LANGUAGE="en"
-export OF_TARGET_DEVICES="merlin,merlinnfc"
+export OF_TARGET_DEVICES="merlin,merlin_eea,merlinnfc"
 export LC_ALL="C"
 #
 export FOX_USE_BASH_SHELL=1
@@ -30,7 +30,7 @@ export OF_KEEP_DM_VERITY=1
 export OF_DONT_PATCH_ENCRYPTED_DEVICE=1
 
 # - LEDs doesn't work - mtk_flashlight_brightness_set: invalid value 2047 or enabled 0
-export OF_FLASHLIGHT_ENABLE=0 
+export OF_FLASHLIGHT_ENABLE=0
 export OF_USE_GREEN_LED=0
 
 # Fix zip install issues on >R11 
