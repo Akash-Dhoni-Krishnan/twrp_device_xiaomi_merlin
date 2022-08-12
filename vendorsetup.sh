@@ -13,9 +13,7 @@ export FOX_USE_NANO_EDITOR=1
 export FOX_USE_TAR_BINARY=1
 export FOX_USE_SED_BINARY=1
 export FOX_USE_XZ_UTILS=1
-export FOX_ASH_IS_BASH=1
 #
-export OF_QUICK_BACKUP_LIST="/boot;/super_image;/persist_image;"
 export OF_RUN_POST_FORMAT_PROCESS=1
 export OF_SKIP_MULTIUSER_FOLDERS_BACKUP=1
 export OF_SKIP_DECRYPTED_ADOPTED_STORAGE=1
@@ -54,4 +52,7 @@ export OF_STATUS_H=90
 export OF_STATUS_INDENT_LEFT=50
 export OF_STATUS_INDENT_RIGHT=50
 export ALLOW_DISABLE_NAVBAR=0
+
+# Quick Backup List - Backup Boot, Persist, IMEI & Baseband
+export OF_QUICK_BACKUP_LIST="/boot;/protect_f;/protect_s;/proinfo;/nvram;/nvdata;/nvcfg;/persist_image;"
 #
