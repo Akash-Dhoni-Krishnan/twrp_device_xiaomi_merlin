@@ -16,12 +16,10 @@
 # limitations under the License.
 #
 
-PRODUCT_USE_DYNAMIC_PARTITIONS := true
-
 # Inherit from those products. Most specific first.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base.mk)
 $(call inherit-product-if-exists, $(SRC_TARGET_DIR)/product/embedded.mk)
-$(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 
 # Inherit from merlin device
@@ -37,11 +35,13 @@ PRODUCT_BRAND := Redmi
 PRODUCT_MODEL := Redmi Note 9
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_RELEASE_NAME := Redmi Note 9
+PRODUCT_PLATFORM := mt6768
 
 # Fastbootd
 PRODUCT_PACKAGES += \
+    fastbootd \
     android.hardware.fastboot@1.0-impl-mock \
-    android.hardware.fastboot@1.0-impl-mock.recovery
+    android.hardware.fastboot@1.0-impl-mock.recovery 
 
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.bootimage.build.date.utc=0 \

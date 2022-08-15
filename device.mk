@@ -16,4 +16,10 @@
 # limitations under the License.
 #
 
+# For building with minimal manifest 
+ALLOW_MISSING_DEPENDENCIES := true
+
+# Dynamic Partitions
+PRODUCT_USE_DYNAMIC_PARTITIONS := true
+
 LOCAL_PATH := device/xiaomi/merlin
