@@ -25,7 +25,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 # Inherit from merlin device
 $(call inherit-product, device/xiaomi/merlin/device.mk)
 
-# Inherit some common Twrp stuff.
+# Inherit some common TWRP stuff.
 $(call inherit-product, vendor/twrp/config/common.mk)
 
 # Device identifier. This must come after all inclusions
@@ -41,7 +41,7 @@ PRODUCT_PLATFORM := mt6768
 PRODUCT_PACKAGES += \
     fastbootd \
     android.hardware.fastboot@1.0-impl-mock \
-    android.hardware.fastboot@1.0-impl-mock.recovery 
+    android.hardware.fastboot@1.0-impl-mock.recovery
 
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.bootimage.build.date.utc=0 \

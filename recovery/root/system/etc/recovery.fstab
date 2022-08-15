@@ -12,4 +12,3 @@ product                                          /product              ext4     
 /dev/block/platform/bootdevice/by-name/md_udc    /metadata             ext4     noatime,nosuid,nodev,discard                                   wait,formattable,first_stage_mount
 /dev/block/platform/bootdevice/by-name/misc      /misc                 emmc     defaults                                                       defaults
 /dev/block/platform/bootdevice/by-name/userdata  /data                 ext4     noatime,nosuid,nodev,noauto_da_alloc,async_discard,errors=panic,inlinecrypt wait,check,formattable,quota,latemount,reservedsize=128m,resize,fileencryption=aes-256-xts
-

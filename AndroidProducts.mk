@@ -21,4 +21,4 @@ PRODUCT_MAKEFILES := \
 
 COMMON_LUNCH_CHOICES := \
     twrp_merlin-userdebug \
-    twrp_merlin-eng 
+    twrp_merlin-eng

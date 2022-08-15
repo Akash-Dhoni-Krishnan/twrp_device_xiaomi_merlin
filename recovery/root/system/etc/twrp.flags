@@ -9,7 +9,6 @@
 /recovery         emmc     /dev/block/platform/bootdevice/by-name/recovery     flags=backup=1;flashimg=1
 /cache            ext4     /dev/block/platform/bootdevice/by-name/cache        flags=backup=1;wipeingui;wipeduringfactoryreset
 /metadata         ext4     /dev/block/platform/bootdevice/by-name/md_udc       flags=display="Metadata";backup=1
-/vbmeta           emmc     /dev/block/platform/bootdevice/by-name/vbmeta       flags=display="VBmeta";backup=1;flashimg=1
 /persist          ext4     /dev/block/platform/bootdevice/by-name/persist      flags=display="Persist";backup=1
 
 /dtbo             emmc     /dev/block/platform/bootdevice/by-name/dtbo         flags=display="dtbo";backup=1;flashimg=1
@@ -30,6 +29,11 @@
 /para             emmc     /dev/block/platform/bootdevice/by-name/para
 /persistent       emmc     /dev/block/platform/bootdevice/by-name/frp
 
+# VBmeta Images
+/vbmeta           emmc     /dev/block/platform/bootdevice/by-name/vbmeta       flags=display="VBmeta";backup=1;flashimg=1
+/vbmeta_system    emmc	   /dev/block/platform/bootdevice/by-name/vbmeta_system flags=display="VBMeta System";backup=1;flashimg=1
+/vbmeta_vendor    emmc	   /dev/block/platform/bootdevice/by-name/vbmeta_vendor flags=display="VBMeta Vendor";backup=1;flashimg=1
+
 # Partition Images
 /system_image     emmc     /dev/block/mapper/system                            flags=backup=1;flashimg=1
 /vendor_image     emmc     /dev/block/mapper/vendor                            flags=backup=1;flashimg=1
@@ -39,4 +43,4 @@
 
 # Removable Storage
 /external_sd      auto     /dev/block/mmcblk1p1     /dev/block/mmcblk1         flags=display="MicroSD";storage;wipeingui;removable;fsflags="utf8"
-/usb_otg          auto     /dev/block/sda1              /dev/block/sda         flags=display="USB-Storage";storage;wipeingui;removable;fsflags="utf8"   
+/usb_otg          auto     /dev/block/sda1              /dev/block/sda         flags=display="USB-Storage";storage;wipeingui;removable;fsflags="utf8"
