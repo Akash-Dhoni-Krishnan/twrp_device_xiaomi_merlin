@@ -23,6 +23,10 @@ export OF_USE_MAGISKBOOT=1
 export OF_CLOCK_POS=0
 export OF_HIDE_NOTCH=1
 
+# Fix OrangeFox hanging on Android >12 because of unsuccesful decryption attempts :(
+# Remove when proper decryption support is present
+export OF_SKIP_FBE_DECRYPTION_SDKVERSION=31
+
 # CCACHE
 export USE_CCACHE=1
 export CCACHE_EXEC=/usr/bin/ccache
@@ -31,7 +35,7 @@ export CCACHE_EXEC=/usr/bin/ccache
 export OF_KEEP_DM_VERITY=1
 export OF_DONT_PATCH_ENCRYPTED_DEVICE=1
 
-# - LEDs doesn't work - mtk_flashlight_brightness_set: invalid value 2047 or enabled 0
+# LEDs doesn't work - mtk_flashlight_brightness_set: invalid value 2047 or enabled 0
 export OF_FLASHLIGHT_ENABLE=0
 export OF_USE_GREEN_LED=0
 
