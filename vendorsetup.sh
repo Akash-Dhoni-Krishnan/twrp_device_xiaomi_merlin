@@ -3,7 +3,6 @@ export FOX_VERSION="R11.1"
 export TARGET_ARCH="arm64"
 export FOX_BUGGED_AOSP_ARB_WORKAROUND="1546300800" # Tue Jan 1 2019 00:00:00 GMT
 export FOX_USE_TWRP_RECOVERY_IMAGE_BUILDER=1
-export TW_DEFAULT_LANGUAGE="en"
 export OF_TARGET_DEVICES="merlin,merlin_eea,merlinnfc"
 export LC_ALL="C"
 #
@@ -16,16 +15,16 @@ export FOX_USE_XZ_UTILS=1
 #
 export OF_RUN_POST_FORMAT_PROCESS=1
 export OF_SKIP_MULTIUSER_FOLDERS_BACKUP=1
-export OF_SKIP_DECRYPTED_ADOPTED_STORAGE=1
 export OF_NO_TREBLE_COMPATIBILITY_CHECK=1
 export OF_USE_MAGISKBOOT_FOR_ALL_PATCHES=1
 export OF_USE_MAGISKBOOT=1
-export OF_CLOCK_POS=0
 export OF_HIDE_NOTCH=1
+export OF_CLOCK_POS=0
 
 # Fix OrangeFox hanging on Android >12 because of unsuccesful decryption attempts :(
-# Remove when proper decryption support is present
+# Remove when proper decryption support is implemented/present
 export OF_SKIP_FBE_DECRYPTION_SDKVERSION=31
+export OF_SKIP_DECRYPTED_ADOPTED_STORAGE=1
 
 # CCACHE
 export USE_CCACHE=1
