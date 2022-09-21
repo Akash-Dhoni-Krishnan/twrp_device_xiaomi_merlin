@@ -35,12 +35,9 @@
 /vbmeta_vendor    emmc	   /dev/block/platform/bootdevice/by-name/vbmeta_vendor flags=display="VBMeta Vendor";backup=1;flashimg=1
 
 # Partition Images
-/system_image     emmc     /dev/block/mapper/system                            flags=backup=1;flashimg=1
-/vendor_image     emmc     /dev/block/mapper/vendor                            flags=backup=1;flashimg=1
-/product_image    emmc     /dev/block/mapper/product                           flags=backup=1;flashimg=1
 /persist_image    emmc     /dev/block/platform/bootdevice/by-name/persist      flags=display="Persist_Image";backup=1;flashimg=1
 /cust_image       emmc     /dev/block/platform/bootdevice/by-name/cust         flags=display="Cust_Image";backup=1;flashimg=1
 
 # Removable Storage
-/external_sd      auto     /dev/block/mmcblk1p1     /dev/block/mmcblk1         flags=display="MicroSD";storage;wipeingui;removable;fsflags="utf8"
+/sdcard1          auto     /dev/block/mmcblk1p1     /dev/block/mmcblk1         flags=display="MicroSD";storage;wipeingui;removable;fsflags="utf8"
 /usb_otg          auto     /dev/block/sda1              /dev/block/sda         flags=display="USB-Storage";storage;wipeingui;removable;fsflags="utf8"

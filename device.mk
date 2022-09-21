@@ -16,10 +16,16 @@
 # limitations under the License.
 #
 
-# For building with minimal manifest 
+# Building with minimal manifest 
 ALLOW_MISSING_DEPENDENCIES := true
 
 # Dynamic Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
+
+# Assertation
+TARGET_OTA_ASSERT_DEVICE := merlin,merlin_eea,merlinnfc
+
+TARGET_SCREEN_HEIGHT := 2340
+TARGET_SCREEN_WIDTH := 1080
 
 LOCAL_PATH := device/xiaomi/merlin

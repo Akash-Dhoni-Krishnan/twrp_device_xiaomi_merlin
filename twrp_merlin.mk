@@ -27,12 +27,11 @@ $(call inherit-product, device/xiaomi/merlin/device.mk)
 $(call inherit-product, vendor/twrp/config/common.mk)
 
 # Device identifier. This must come after all inclusions
-PRODUCT_DEVICE := merlin
 PRODUCT_NAME := twrp_merlin
+PRODUCT_DEVICE := merlin
 PRODUCT_BRAND := Redmi
 PRODUCT_MODEL := Redmi Note 9
 PRODUCT_MANUFACTURER := Xiaomi
-PRODUCT_RELEASE_NAME := Redmi Note 9
 PRODUCT_PLATFORM := mt6768
 
 # Fastbootd
