@@ -16,7 +16,7 @@
 # limitations under the License.
 #
 
-DEVICE_PATH := device/xiaomi/merlin
+DEVICE_PATH := device/xiaomi/merlinx
 
 # Architecture
 TARGET_ARCH := arm64
@@ -35,7 +35,7 @@ TARGET_2ND_CPU_VARIANT_RUNTIME := cortex-a55
 TARGET_USES_64_BIT_BINDER := true
 
 # Assertation
-TARGET_OTA_ASSERT_DEVICE := merlin,merlin_eea,merlinnfc
+TARGET_OTA_ASSERT_DEVICE := merlin,merlin_eea,merlinnfc,merlinx
 
 # AVB
 BOARD_AVB_ENABLE := true
