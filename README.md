@@ -1,6 +1,6 @@
-# (UNOFFICIAL) orangefox_device_xiaomi_merlin
+# (UNOFFICIAL) twrp_device_xiaomi_merlinx
 
-The Xiaomi Redmi Note 9 (codenamed _"merlin"_) is an entry-level smartphone from Xiaomi announced in April 2020.
+The Xiaomi Redmi Note 9 (codenamed _"merlin"_) is an entry-level smartphone from Xiaomi announced in April 2020 and now .
 
 ## Device specifications
 
@@ -24,15 +24,9 @@ The Xiaomi Redmi Note 9 (codenamed _"merlin"_) is an entry-level smartphone from
 
 ![Xiaomi Redmi Note 9](merlin.png)
 
-  ### 📑 Important Note
-
-  - At the current situation, i have this device without any screen/display and it won't turn on 😕
-  - Please [open an issue](https://github.com/chickendrop89/orangefox_device_xiaomi_merlin/issues/new) if you have ran into any issue/errors with **anything**
-  - This repository will probably not be maintained by me much anymore because i have no device to test the builds on. [Feel free to fork this](https://github.com/chickendrop89/orangefox_device_xiaomi_merlin/fork) if you like 👍
-  
   ### ⛔ What does not work yet :(
 
-  - Android 12/12L decryption
+  - Android 12/12L decryption(Trying to fix)
   - Torch/Flashlight Feature
   - F2FS Filesystem Support (Not supported by prebuilt)
   - You tell me
@@ -40,6 +34,4 @@ The Xiaomi Redmi Note 9 (codenamed _"merlin"_) is an entry-level smartphone from
   ## ⚠️ **ONLY USE AT YOUR OWN RISK** ⚠️
 
   - I held no responibility over bricked phones, loss of data, dead sd-cards or whatever
-  - [Official OrangeFox Build Guide 🦊](https://wiki.orangefox.tech/en/dev/building)
-  - [Original TWRP Device tree 🌲](https://github.com/chickendrop89/orangefox_device_xiaomi_merlin/tree/e8949de743b9892e94bf88611a52f1b3e19a461a)
   - [MIUI Kernel source (if needed)](https://github.com/MiCode/Xiaomi_Kernel_OpenSource/tree/merlin-r-oss/)
