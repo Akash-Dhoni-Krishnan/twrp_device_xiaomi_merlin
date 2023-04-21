@@ -28,7 +28,7 @@ include $(CLEAR_VARS)
 LOCAL_SRC_FILES:= \
         adbbumain.cpp
 
-LOCAL_SHARED_LIBRARIES += libstdc++ libz libtwadbbu
+LOCAL_SHARED_LIBRARIES += libstdc++ libz
 
 ifeq ($(shell test $(PLATFORM_SDK_VERSION) -lt 23; echo $$?),0)
     LOCAL_C_INCLUDES += external/stlport/stlport
