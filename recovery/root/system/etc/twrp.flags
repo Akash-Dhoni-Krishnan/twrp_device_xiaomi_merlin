@@ -10,7 +10,7 @@
 /cache            ext4     /dev/block/platform/bootdevice/by-name/cache        flags=backup=1;wipeingui;wipeduringfactoryreset
 /metadata         ext4     /dev/block/platform/bootdevice/by-name/md_udc       flags=display="Metadata";backup=1
 /persist          ext4     /dev/block/platform/bootdevice/by-name/persist      flags=display="Persist";backup=1
-/data             ext4     /dev/block/platform/bootdevice/by-name/userdata     flags=display="data"
+/data             ext4     /dev/block/platform/bootdevice/by-name/userdata     flags=fileencryption=aes-256-xts
 /dtbo             emmc     /dev/block/platform/bootdevice/by-name/dtbo         flags=display="dtbo";backup=1;flashimg=1
 /bootloader       emmc     /dev/block/platform/bootdevice/by-name/lk           flags=display="bootloader (lk)";backup=1;flashimg=1
 /bootloader2      emmc     /dev/block/platform/bootdevice/by-name/lk2          flags=display="bootloader (lk2)";backup=1;flashimg=1;subpartitionof=/bootloader  
