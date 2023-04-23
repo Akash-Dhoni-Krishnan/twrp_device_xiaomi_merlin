@@ -2,7 +2,7 @@
 /vendor                   ext4     vendor                                                   flags=display=vendor;logical
 /product                  ext4     product                                                  flags=display=product;logical
 /metadata                 ext4     /dev/block/platform/bootdevice/by-name/md_udc            flags=display=metadata
-/data                     f2fs     /dev/block/dm-30 /data/user/0                            flags=display=data
+/data                     f2fs     /dev/block/dm-30/data/user/0                             flags=display=data
 /cache                    ext4     /dev/block/platform/bootdevice/by-name/cache             flags=display=cache
 /mnt/vendor/protect_f     ext4     /dev/block/platform/bootdevice/by-name/protect1          flags=display=protect_f
 /mnt/vendor/protect_s     ext4     /dev/block/platform/bootdevice/by-name/protect2          flags=display=protect_s
@@ -43,5 +43,3 @@ auto                      vfat     /devices/platform/mt_usb*                    
 /cust                     ext4     /dev/block/platform/bootdevice/by-name/cust              flags=display=cust
 /external_sd              vfat     /dev/block/mmcblk1p1    /dev/block/mmcblk1               flags=display="external_sd";storage;wipeingui;removable;fsflags="utf8"
 /usb-otg                  vfat     /dev/block/sda1         /dev/block/sda                   flags=display="usb-otg";storage;wipeingui;removable;fsflags="utf8"
-/devices/platform/externdevice* auto auto defaults voldmanaged=sdcard1:auto,encryptable=userdata
-/devices/platform/mt_usb* auto vfat defaults voldmanaged=usbotg:auto
