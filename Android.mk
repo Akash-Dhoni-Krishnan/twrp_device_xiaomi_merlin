@@ -752,4 +752,3 @@ ifeq ($(TW_INCLUDE_FB2PNG), true)
     include $(commands_TWRP_local_path)/fb2png/Android.mk
 endif
 
-endif
