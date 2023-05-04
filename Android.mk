@@ -20,15 +20,13 @@ $(call import-module, bootable/recovery/updater)
 include $(CLEAR_VARS)
  
 LOCAL_MODULE := recovery
-LOCAL_SRC_FILES := $(COMMON_OUT)/target/product/$(TARGET_DEVICE)/obj/STATIC_LIBRARIES/libz-dynamic_intermediates/libz.so \\
-                   $(COMMON_OUT)/target/product/$(TARGET_DEVICE)/obj/STATIC_LIBRARIES/libcrypto-dynamic_intermediates/libcrypto.so \\
-                   $(TARGET_OUT)/updater \\
-                   $(COMMON_OUT)/host/$(HOST_OUT)/bin/mkbootimg \\
-                   $(COMMON_OUT)/host/$(HOST_OUT)/bin/mkbootfs \\
-                   $(COMMON_OUT)/host/$(HOST_OUT)/bin/unpackbootimg
+LOCAL_SRC_FILES := $(COMMON_OUT)/target/product/$(TARGET_DEVICE)/obj/STATIC_LIBRARIES/libz-dynamic_intermediates/libz.so \
+ $(COMMON_OUT)/target/product/$(TARGET_DEVICE)/obj/STATIC_LIBRARIES/libcrypto-dynamic_intermediates/libcrypto.so \
+ $(TARGET_OUT)/updater \
+ $(COMMON_OUT)/host/$(HOST_OUT)/bin/mkbootimg \
+ $(COMMON_OUT)/host/$(HOST_OUT)/bin/mkbootfs \
+ $(COMMON_OUT)/host/$(HOST_OUT)/bin/unpackbootimg
 LOCAL_MODULE_TAGS := optional
- 
-include $(BUILD_EXECUTABLE)
 
 ifneq ($(project-path-for),)
     ifeq ($(LOCAL_PATH),$(call project-path-for,recovery))
