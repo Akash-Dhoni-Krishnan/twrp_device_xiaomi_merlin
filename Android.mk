@@ -12,11 +12,8 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-
 LOCAL_PATH := $(call my-dir)
 
-ifeq ($(TARGET_DEVICE), merlin)
-
+ifeq ($(TARGET_DEVICE), merlinx)
 include $(call all-subdir-makefiles,$(LOCAL_PATH))
-
 endif
