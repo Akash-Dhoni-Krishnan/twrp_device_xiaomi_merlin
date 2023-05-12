@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<recovery>
+	<details>
+		<resolution width="1080" height="1920"/>
+		<author>fordownloads</author>
+		<title>TWRP Workshop</title>
+		<description>Material Design theme for TWRP recovery</description>
+		<preview></preview>
+		<themeversion>5</themeversion> <!-- !!! МЕНЯТЬ НЕ РЕКОМЕНДУЕТСЯ (МИНИМУМ 2) !!! -->
+	</details>
+	
+	<include>
+		<xmlfile name="themes/bar.xml"/>
+		<xmlfile name="themes/font.xml"/>
+		<xmlfile name="themes/style.xml"/>
+		<xmlfile name="themes/accent.xml"/>
+		<xmlfile name="resources/images.xml"/>
+		<xmlfile name="resources/vars.xml"/>
+		<xmlfile name="themes/bgstyle.xml"/>
+	
+		<xmlfile name="pages/templates/keyboard.xml"/>
+		<xmlfile name="pages/templates/navbar.xml"/>
+		<xmlfile name="pages/templates/statusbar.xml"/>
+		<xmlfile name="pages/templates/templates.xml"/>
+		
+		<xmlfile name="pages/main.xml"/>
+		<xmlfile name="pages/pass.xml"/>
+		<xmlfile name="pages/install.xml"/>
+		<xmlfile name="pages/wipe.xml"/>
+		<xmlfile name="pages/backup.xml"/>
+		<xmlfile name="pages/restore.xml"/>
+		<xmlfile name="pages/mount.xml"/>
+		<xmlfile name="pages/files.xml"/>
+		<xmlfile name="pages/advanced.xml"/>
+		<xmlfile name="pages/reboot.xml"/>
+		<xmlfile name="pages/settings.xml"/>
+		<xmlfile name="pages/workshop.xml"/>
+		<xmlfile name="pages/aikrepack.xml"/>
+		<xmlfile name="pages/universal.xml"/>
+		<xmlfile name="pages/anywhere.xml"/>
+		<xmlfile name="pages/dialogs.xml"/>
+		<xmlfile name="pages/addon.xml"/>
+		<xmlfile name="pages/fastbootd.xml"/>
+	</include>
+	<variables>
+		<variable name="theme_version" value="FULL v6"/>
+		<variable name="zip_pack_av" value="1"/>
+		<variable name="default_arc" value="0"/>
+		<variable name="workshop_av" value="1"/> 
+		<variable name="screen_h" value="1920"/>
+		<variable name="center_y" value="960"/>
+	</variables>
+</recovery>

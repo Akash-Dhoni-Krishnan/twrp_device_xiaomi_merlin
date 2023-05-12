@@ -1,0 +1,659 @@
+<?xml version="1.0"?>
+<recovery>
+	<pages>
+		
+		<page name="addon">
+			<template name="body"/>
+
+			<template name="ab"/>
+
+			<template name="statusbarinfo"/>
+
+			<text style="text_ab_title">
+				<placement x="%col1_x_indent%" y="%ab_bc_y%"/>
+				<text>Add-on By @shas45558</text>
+			</text>
+
+<!--
+
+			<button style="main_button_half_height">
+				<placement x="36" y="324"/>
+				<text>Magisk Installer</text>
+
+			</button>
+			
+			<button style="main_button_half_height">
+				<placement x="36" y="489"/>
+				<text>Enforcer</text>
+				<actions>
+					<action function="set">tw_back=addons</action>
+					<action function="set">tw_filename=/addon/enforcer.zip</action>
+					<action function="set">tw_action=queuezip</action>
+					<action function="set">tw_has_action2=1</action>
+					<action function="set">tw_action2=flash</action>
+					<action function="set">tw_action2_param=flash_zip2</action>
+					<action function="set">tw_text1=Convert your system as Enforce.</action>
+					<action function="set">tw_text2=Try to install it?</action>
+					<action function="set">tw_slider_text=Swipe to Confirm</action>
+					<action function="page">confirm_action</action>
+				</actions>
+			</button>
+			
+			<button style="main_button_half_height">
+				<placement x="36" y="654"/>
+				<text>ForceEncrypt</text>
+				<actions>
+					<action function="set">tw_back=addons</action>
+					<action function="set">tw_filename=/addon/Disable_Dm-Verity_ForceEncrypt.zip</action>
+					<action function="set">tw_action=queuezip</action>
+					<action function="set">tw_has_action2=1</action>
+					<action function="set">tw_action2=flash</action>
+					<action function="set">tw_action2_param=flash_zip2</action>
+					<action function="set">tw_text1=Disable Dm-Verity and ForceEncrypt.</action>
+					<action function="set">tw_text2=Don't flash on a13</action>
+					<action function="set">tw_slider_text=Swipe to Confirm</action>
+					<action function="page">confirm_action</action>
+				</actions>
+			</button>
+			
+			<!--button style="main_button_half_height">
+				<placement x="36" y="819"/>
+				<text>F2fs Patcher</text>
+				<actions>
+					<action function="set">tw_back=addons</action>
+					<action function="set">tw_filename=/addon/F2fs-patcher.zip</action>
+					<action function="set">tw_action=queuezip</action>
+					<action function="set">tw_has_action2=1</action>
+					<action function="set">tw_action2=flash</action>
+					<action function="set">tw_action2_param=flash_zip2</action>
+					<action function="set">tw_text1=Flash it after convert your data to f2fs.</action>
+					<action function="set">tw_text2=You can also convert your cache to f2fs.</action>
+					<action function="set">tw_slider_text=Swipe to Confirm</action>
+					<action function="page">confirm_action</action>
+				</actions>
+			</button>
+			
+			<button style="main_button_half_height">
+				<placement x="36" y="984"/>
+				<text>Unlock Logo Remover</text>
+				<actions>
+					<action function="set">tw_back=addons</action>
+					<action function="set">tw_filename=/addon/Unlock-Logo-Remover.zip</action>
+					<action function="set">tw_action=queuezip</action>
+					<action function="set">tw_has_action2=1</action>
+					<action function="set">tw_action2=flash</action>
+					<action function="set">tw_action2_param=flash_zip2</action>
+					<action function="set">tw_text1=after flash Unlock Logo will remove.</action>
+					<action function="set">tw_text2=When you unlock BL then the logo come. </action>
+					<action function="set">tw_slider_text=Swipe to Confirm</action>
+					<action function="page">confirm_action</action>
+				</actions>
+			</button>
+			
+			<button style="main_button_half_height">
+				<placement x="36" y="1149"/>
+				<text>System RW</text>
+				<actions>
+					<action function="set">tw_back=addons</action>
+					<action function="set">tw_filename=/addon/systemrw.zip</action>
+					<action function="set">tw_action=queuezip</action>
+					<action function="set">tw_has_action2=1</action>
+					<action function="set">tw_action2=flash</action>
+					<action function="set">tw_action2_param=flash_zip2</action>
+					<action function="set">tw_text1=After flash you can modify system files.</action>
+					<action function="set">tw_text2=Try to install it?</action>
+					<action function="set">tw_slider_text=Swipe to Confirm</action>
+					<action function="page">confirm_action</action>
+				</actions>
+			</button>
+			
+			<button style="main_button_half_height">
+				<placement x="36" y="1314"/>
+				<text>Remove Pin/Pass</text>
+				<actions>
+					<action function="set">tw_back=addons</action>
+					<action function="set">tw_filename=/addon/rfp.zip</action>
+					<action function="set">tw_action=queuezip</action>
+					<action function="set">tw_has_action2=1</action>
+					<action function="set">tw_action2=flash</action>
+					<action function="set">tw_action2_param=flash_zip2</action>
+					<action function="set">tw_text1=Remove pin/password from system.</action>
+					<action function="set">tw_text2=Try to install it?</action>
+					<action function="set">tw_slider_text=Swipe to Confirm</action>
+					<action function="page">confirm_action</action>
+				</actions>
+			</button>
+			
+			<!--button style="main_button_half_height">
+				<placement x="557" y="324"/>
+				<text>Magisk Manager</text>
+				<actions>
+					<action function="set">tw_back=addons</action>
+					<action function="set">tw_filename=/addon/mm.zip</action>
+					<action function="set">tw_action=queuezip</action>
+					<action function="set">tw_has_action2=1</action>
+					<action function="set">tw_action2=flash</action>
+					<action function="set">tw_action2_param=flash_zip2</action>
+					<action function="set">tw_text1=Aroma Magisk Manager.</action>
+					<action function="set">tw_text2=Flash to use it.</action>
+					<action function="set">tw_slider_text=Swipe to Confirm</action>
+					<action function="page">confirm_action</action>
+				</actions>
+			</button>
+			
+			<button style="main_button_half_height">
+				<placement x="557" y="489"/>
+				<text>Permissiver</text>
+				<actions>
+					<action function="set">tw_back=addons</action>
+					<action function="set">tw_filename=/addon/permissiver.zip</action>
+					<action function="set">tw_action=queuezip</action>
+					<action function="set">tw_has_action2=1</action>
+					<action function="set">tw_action2=flash</action>
+					<action function="set">tw_action2_param=flash_zip2</action>
+					<action function="set">tw_text1=Convert your system as Permissive.</action>
+					<action function="set">tw_text2=Try to install it?</action>
+					<action function="set">tw_slider_text=Swipe to Confirm</action>
+					<action function="page">confirm_action</action>
+				</actions>
+			</button>
+			
+			<button style="main_button_half_height">
+				<placement x="557" y="654"/>
+				<text>Replace TWRP Fixer</text>
+				<actions>
+					<action function="set">tw_back=addons</action>
+					<action function="set">tw_filename=/addon/disable-replace-twrp.zip</action>
+					<action function="set">tw_action=queuezip</action>
+					<action function="set">tw_has_action2=1</action>
+					<action function="set">tw_action2=flash</action>
+					<action function="set">tw_action2_param=flash_zip2</action>
+					<action function="set">tw_text1=In MIUI rom disable replace of TWRP.</action>
+					<action function="set">tw_text2=Try to install it?</action>
+					<action function="set">tw_slider_text=Swipe to Confirm</action>
+					<action function="page">confirm_action</action>
+				</actions>
+			</button>
+			
+			<button style="main_button_half_height">
+				<placement x="557" y="819"/>
+				<text>Imei Backup</text>
+				<actions>
+					<action function="set">tw_back=addons</action>
+					<action function="set">tw_filename=/addon/Imei-Backup.zip</action>
+					<action function="set">tw_action=queuezip</action>
+					<action function="set">tw_has_action2=1</action>
+					<action function="set">tw_action2=flash</action>
+					<action function="set">tw_action2_param=flash_zip2</action>
+					<action function="set">tw_text1=It will Backup your IMEI.</action>
+					<action function="set">tw_text2=Never share it with anyone.</action>
+					<action function="set">tw_slider_text=Swipe to Confirm</action>
+					<action function="page">confirm_action</action>
+				</actions>
+			</button>
+			
+			<button style="main_button_half_height">
+				<placement x="557" y="984"/>
+				<text>Vbmeta Patcher</text>
+				<actions>
+					<action function="set">tw_back=addons</action>
+					<action function="set">tw_filename=/addon/vbmetapatch.zip</action>
+					<action function="set">tw_action=queuezip</action>
+					<action function="set">tw_has_action2=1</action>
+					<action function="set">tw_action2=flash</action>
+					<action function="set">tw_action2_param=flash_zip2</action>
+					<action function="set">tw_text1=Patch your vbmeta.</action>
+					<action function="set">tw_text2=Try to install it?</action>
+					<action function="set">tw_slider_text=Swipe to Confirm</action>
+					<action function="page">confirm_action</action>
+				</actions>
+			</button>
+			
+			<!--button style="main_button_half_height">
+				<placement x="557" y="1149"/>
+				<text>SVP Resizer</text>
+				<actions>
+					<action function="set">tw_back=addons</action>
+					<action function="set">tw_filename=/addon/spv-resizer.zip</action>
+					<action function="set">tw_action=queuezip</action>
+					<action function="set">tw_has_action2=1</action>
+					<action function="set">tw_action2=flash</action>
+					<action function="set">tw_action2_param=flash_zip2</action>
+					<action function="set">tw_text1=Before flash MUST Backup product and vendor.</action>
+					<action function="set">tw_text2=After flash reboot to recovery and restore Them.</action>
+					<action function="set">tw_slider_text=Follow Above line Must.</action>
+					<action function="page">confirm_action</action>
+				</actions>
+			</button>
+			
+			<button style="main_button_half_height">
+				<placement x="557" y="1314"/>
+				<text>File Manager</text>
+				<actions>
+					<action function="set">tw_back=addons</action>
+					<action function="set">tw_filename=/addon/fm.zip</action>
+					<action function="set">tw_action=queuezip</action>
+					<action function="set">tw_has_action2=1</action>
+					<action function="set">tw_action2=flash</action>
+					<action function="set">tw_action2_param=flash_zip2</action>
+					<action function="set">tw_text1=Flash it to start Aroma Filr Manager.</action>
+					<action function="set">tw_text2=Flash to use it.</action>
+					<action function="set">tw_slider_text=Swipe to Confirm</action>
+					<action function="page">confirm_action</action>
+				</actions>
+			</button>
+
+-->
+
+			<!--shas part-->
+
+			<image>
+				<condition var1="menu_btn_solid" var2="0"/>
+				<placement x="%col1_x%" y="%mb_row1_y%"/>
+				<image resource="mb_advanced"/>
+			</image>
+
+			<fill color="%accent%">
+				<condition var1="alt_style_btn" var2="0"/>
+				<condition var1="menu_btn_solid" var2="1"/>
+				<placement x="%mb_icon_x%" y="%mb_row1_icon_y%" w="%mb_icon_w%" h="%mb_icon_h%"/>
+			</fill>
+
+			<image>
+				<condition var1="menu_btn_solid" var2="1"/>
+				<placement x="%col1_x%" y="%mb_row1_y%"/>
+				<image resource="mb_advanced_color"/>
+			</image>
+
+			<image>
+				<condition var1="menu_btn_solid" var2="1"/>
+				<placement x="%col1_x_neg%" y="%mb_row1_y%" placement="1"/>
+				<image resource="mb_color_extension"/>
+			</image>
+
+			<text style="mb_text">
+				<placement x="%col1_x_indent%" y="%mb_row1_text_y%"/>
+				<text>Magisk Installer</text>
+			</text>
+
+			<button style="mb_btn">
+				<placement x="%col1_x%" y="%mb_row1_y%" w="%content_w%" h="%mb_h%"/>
+				<actions>
+					<action function="set">tw_back=addon</action>
+					<action function="set">install_back=addon</action>
+					<action function="set">tw_filename=twres/addon/magisk.zip</action>
+					<action function="set">tw_file=twres/addon/magisk.zip</action>
+					<action function="set">tw_zip_location=twres/addon</action>
+					<action function="set">tw_action=queuezip</action>
+					<action function="set">tw_has_action2=1</action>
+					<action function="set">tw_action2=flash</action>
+					<action function="set">tw_action2_param=flash_zip</action>
+					<action function="set">tw_text1=Magisk 25.2 Will Be Installed</action>
+					<action function="set">tw_text2=Want Root ?</action>
+					<action function="set">tw_slider_text=Swipe to Confirm</action>
+					<action function="page">confirm_action</action>
+				</actions>
+			</button>
+
+
+
+
+			<image>
+				<condition var1="menu_btn_solid" var2="0"/>
+				<placement x="%col1_x%" y="%mb_row2_y%"/>
+				<image resource="mb_advanced"/>
+			</image>
+
+			<fill color="%accent%">
+				<condition var1="alt_style_btn" var2="0"/>
+				<condition var1="menu_btn_solid" var2="1"/>
+				<placement x="%mb_icon_x%" y="%mb_row2_icon_y%" w="%mb_icon_w%" h="%mb_icon_h%"/>
+			</fill>
+
+			<image>
+				<condition var1="menu_btn_solid" var2="1"/>
+				<placement x="%col1_x%" y="%mb_row2_y%"/>
+				<image resource="mb_advanced_color"/>
+			</image>
+
+			<image>
+				<condition var1="menu_btn_solid" var2="1"/>
+				<placement x="%col1_x_neg%" y="%mb_row2_y%" placement="1"/>
+				<image resource="mb_color_extension"/>
+			</image>
+
+			<text style="mb_text">
+				<placement x="%col1_x_indent%" y="%mb_row2_text_y%"/>
+				<text>Magisk Maneger</text>
+			</text>
+
+			<button style="mb_btn">
+				<placement x="%col1_x%" y="%mb_row2_y%" w="%content_w%" h="%mb_h%"/>
+				<actions>
+				    <action function="queueclear"/>
+				    <action function="set">tw_filename=/twres/addon/mm.zip</action>
+			    	<action function="set">tw_signed_zip_verify_tmp=%tw_signed_zip_verify%</action>
+			    	<action function="set">tw_signed_zip_verify=0</action>
+			    	<action function="queuezip"/>
+		    		<action function="flash">aroma_busy2</action>
+				</actions>
+			</button>
+
+
+
+
+
+			<image>
+				<condition var1="menu_btn_solid" var2="0"/>
+				<placement x="%col1_x%" y="%mb_row3_y%"/>
+				<image resource="mb_advanced"/>
+			</image>
+
+			<fill color="%accent%">
+				<condition var1="alt_style_btn" var2="0"/>
+				<condition var1="menu_btn_solid" var2="1"/>
+				<placement x="%mb_icon_x%" y="%mb_row3_icon_y%" w="%mb_icon_w%" h="%mb_icon_h%"/>
+			</fill>
+
+			<image>
+				<condition var1="menu_btn_solid" var2="1"/>
+				<placement x="%col1_x%" y="%mb_row3_y%"/>
+				<image resource="mb_advanced_color"/>
+			</image>
+
+			<image>
+				<condition var1="menu_btn_solid" var2="1"/>
+				<placement x="%col1_x_neg%" y="%mb_row3_y%" placement="1"/>
+				<image resource="mb_color_extension"/>
+			</image>
+
+			<text style="mb_text">
+				<placement x="%col1_x_indent%" y="%mb_row3_text_y%"/>
+				<text>Encryption Disabler</text>
+			</text>
+
+			<button style="mb_btn">
+				<placement x="%col1_x%" y="%mb_row3_y%" w="%content_w%" h="%mb_h%"/>
+				<actions>
+					<action function="set">tw_back=addon</action>
+					<action function="set">install_back=addon</action>
+					<action function="set">tw_filename=twres/addon/Disable_Dm-Verity_ForceEncrypt.zip</action>
+					<action function="set">tw_file=twres/addon/Disable_Dm-Verity_ForceEncrypt.zip</action>
+					<action function="set">tw_zip_location=twres/addon</action>
+					<action function="set">tw_action=queuezip</action>
+					<action function="set">tw_has_action2=1</action>
+					<action function="set">tw_action2=flash</action>
+					<action function="set">tw_action2_param=flash_zip</action>
+					<action function="set">tw_text1=Encryption Will Disable</action>
+					<action function="set">tw_text2=Also Root Your Device</action>
+					<action function="set">tw_slider_text=Swipe to Confirm</action>
+					<action function="page">confirm_action</action>
+				</actions>
+			</button>
+
+
+
+
+
+			<image>
+				<condition var1="menu_btn_solid" var2="0"/>
+				<placement x="%col1_x%" y="%mb_row4_y%"/>
+				<image resource="mb_advanced"/>
+			</image>
+
+			<fill color="%accent%">
+				<condition var1="alt_style_btn" var2="0"/>
+				<condition var1="menu_btn_solid" var2="1"/>
+				<placement x="%mb_icon_x%" y="%mb_row4_icon_y%" w="%mb_icon_w%" h="%mb_icon_h%"/>
+			</fill>
+
+			<image>
+				<condition var1="menu_btn_solid" var2="1"/>
+				<placement x="%col1_x%" y="%mb_row4_y%"/>
+				<image resource="mb_advanced_color"/>
+			</image>
+
+			<image>
+				<condition var1="menu_btn_solid" var2="1"/>
+				<placement x="%col1_x_neg%" y="%mb_row4_y%" placement="1"/>
+				<image resource="mb_color_extension"/>
+			</image>
+
+			<text style="mb_text">
+				<placement x="%col1_x_indent%" y="%mb_row4_text_y%"/>
+				<text>Imei Backuper</text>
+			</text>
+
+			<button style="mb_btn">
+				<placement x="%col1_x%" y="%mb_row4_y%" w="%content_w%" h="%mb_h%"/>
+				<actions>
+					<action function="set">tw_back=addon</action>
+					<action function="set">install_back=addon</action>
+					<action function="set">tw_filename=twres/addon/Imei-Backup.zip</action>
+					<action function="set">tw_file=twres/addon/Imei-Backup.zip</action>
+					<action function="set">tw_zip_location=twres/addon</action>
+					<action function="set">tw_action=queuezip</action>
+					<action function="set">tw_has_action2=1</action>
+					<action function="set">tw_action2=flash</action>
+					<action function="set">tw_action2_param=flash_zip</action>
+					<action function="set">tw_text1=Backup Your Imei</action>
+					<action function="set">tw_text2=Not Working In Encrypted Storage</action>
+					<action function="set">tw_slider_text=Swipe to Confirm</action>
+					<action function="page">confirm_action</action>
+				</actions>
+			</button>
+
+
+
+
+
+			<image>
+				<condition var1="menu_btn_solid" var2="0"/>
+				<placement x="%col1_x%" y="%mb_row5_y%"/>
+				<image resource="mb_advanced"/>
+			</image>
+
+			<fill color="%accent%">
+				<condition var1="alt_style_btn" var2="0"/>
+				<condition var1="menu_btn_solid" var2="1"/>
+				<placement x="%mb_icon_x%" y="%mb_row5_icon_y%" w="%mb_icon_w%" h="%mb_icon_h%"/>
+			</fill>
+
+			<image>
+				<condition var1="menu_btn_solid" var2="1"/>
+				<placement x="%col1_x%" y="%mb_row5_y%"/>
+				<image resource="mb_advanced_color"/>
+			</image>
+
+			<image>
+				<condition var1="menu_btn_solid" var2="1"/>
+				<placement x="%col1_x_neg%" y="%mb_row5_y%" placement="1"/>
+				<image resource="mb_color_extension"/>
+			</image>
+
+			<text style="mb_text">
+				<placement x="%col1_x_indent%" y="%mb_row5_text_y%"/>
+				<text>FRP Remover</text>
+			</text>
+
+			<button style="mb_btn">
+				<placement x="%col1_x%" y="%mb_row5_y%" w="%content_w%" h="%mb_h%"/>
+				<actions>
+					<action function="set">tw_back=addon</action>
+					<action function="set">install_back=addon</action>
+					<action function="set">tw_filename=twres/addon/rfp.zip</action>
+					<action function="set">tw_file=twres/addon/rfp.zip</action>
+					<action function="set">tw_zip_location=twres/addon</action>
+					<action function="set">tw_action=queuezip</action>
+					<action function="set">tw_has_action2=1</action>
+					<action function="set">tw_action2=flash</action>
+					<action function="set">tw_action2_param=flash_zip</action>
+					<action function="set">tw_text1=Remove Lock In Device</action>
+					<action function="set">tw_text2=Not Working In Encrypted Storage</action>
+					<action function="set">tw_slider_text=Swipe to Confirm</action>
+					<action function="page">confirm_action</action>
+				</actions>
+			</button>
+
+
+
+
+
+
+			<image>
+				<condition var1="menu_btn_solid" var2="0"/>
+				<placement x="%col1_x%" y="%mb_row6_y%"/>
+				<image resource="mb_advanced"/>
+			</image>
+
+			<fill color="%accent%">
+				<condition var1="alt_style_btn" var2="0"/>
+				<condition var1="menu_btn_solid" var2="1"/>
+				<placement x="%mb_icon_x%" y="%mb_row6_icon_y%" w="%mb_icon_w%" h="%mb_icon_h%"/>
+			</fill>
+
+			<image>
+				<condition var1="menu_btn_solid" var2="1"/>
+				<placement x="%col1_x%" y="%mb_row6_y%"/>
+				<image resource="mb_advanced_color"/>
+			</image>
+
+			<image>
+				<condition var1="menu_btn_solid" var2="1"/>
+				<placement x="%col1_x_neg%" y="%mb_row6_y%" placement="1"/>
+				<image resource="mb_color_extension"/>
+			</image>
+
+			<text style="mb_text">
+				<placement x="%col1_x_indent%" y="%mb_row6_text_y%"/>
+				<text>Disable TWRP Replace</text>
+			</text>
+
+			<button style="mb_btn">
+				<placement x="%col1_x%" y="%mb_row6_y%" w="%content_w%" h="%mb_h%"/>
+				<actions>
+					<action function="set">tw_back=addon</action>
+					<action function="set">install_back=addon</action>
+					<action function="set">tw_filename=twres/addon/disable-replace-twrp.zip</action>
+					<action function="set">tw_file=twres/addon/disable-replace-twrp.zip</action>
+					<action function="set">tw_zip_location=twres/addon</action>
+					<action function="set">tw_action=queuezip</action>
+					<action function="set">tw_has_action2=1</action>
+					<action function="set">tw_action2=flash</action>
+					<action function="set">tw_action2_param=flash_zip</action>
+					<action function="set">tw_text1=Disable Twrp Replace</action>
+					<action function="set">tw_text2=Only For MIUI</action>
+					<action function="set">tw_slider_text=Swipe to Confirm</action>
+					<action function="page">confirm_action</action>
+				</actions>
+			</button>
+
+
+
+			<image>
+				<condition var1="menu_btn_solid" var2="0"/>
+				<placement x="%col1_x%" y="%mb_row7_y%"/>
+				<image resource="mb_advanced"/>
+			</image>
+
+			<fill color="%accent%">
+				<condition var1="alt_style_btn" var2="0"/>
+				<condition var1="menu_btn_solid" var2="1"/>
+				<placement x="%mb_icon_x%" y="%mb_row7_icon_y%" w="%mb_icon_w%" h="%mb_icon_h%"/>
+			</fill>
+
+			<image>
+				<condition var1="menu_btn_solid" var2="1"/>
+				<placement x="%col1_x%" y="%mb_row7_y%"/>
+				<image resource="mb_advanced_color"/>
+			</image>
+
+			<image>
+				<condition var1="menu_btn_solid" var2="1"/>
+				<placement x="%col1_x_neg%" y="%mb_row7_y%" placement="1"/>
+				<image resource="mb_color_extension"/>
+			</image>
+
+			<text style="mb_text">
+				<placement x="%col1_x_indent%" y="%mb_row7_text_y%"/>
+				<text>Vbmeta Patcher</text>
+			</text>
+
+			<button style="mb_btn">
+				<placement x="%col1_x%" y="%mb_row7_y%" w="%content_w%" h="%mb_h%"/>
+				<actions>
+					<action function="set">tw_back=addon</action>
+					<action function="set">install_back=addon</action>
+					<action function="set">tw_filename=twres/addon/vbmetapatch.zip</action>
+					<action function="set">tw_file=twres/addon/vbmetapatch.zip</action>
+					<action function="set">tw_zip_location=twres/addon</action>
+					<action function="set">tw_action=queuezip</action>
+					<action function="set">tw_has_action2=1</action>
+					<action function="set">tw_action2=flash</action>
+					<action function="set">tw_action2_param=flash_zip</action>
+					<action function="set">tw_text1=Patch Vbmeta</action>
+					<action function="set">tw_text2=Only For MIUI</action>
+					<action function="set">tw_slider_text=Swipe to Confirm</action>
+					<action function="page">confirm_action</action>
+				</actions>
+			</button>
+
+
+			<action>
+				<touch key="home"/>
+				<action function="page">main</action>
+			</action>
+
+			<action>
+				<touch key="back"/>
+				<action function="page">advanced</action>
+			</action>
+		</page>
+
+
+		<page name="aroma_busy2">
+			<background color="%background%"/>
+			<template name="background_image"/>
+			
+			<fill color="%lightransparent%">
+				<placement x="0" y="0" w="%screen_w%" h="%status_h%"/>
+			</fill>
+			
+			<template name="statusbarinfo"/>
+			
+			<image>
+				<image resource="aroma_folder"/>
+				<placement x="%center_x%" y="%center_y%" placement="4"/>
+			</image>
+			<text style="bs_text">
+				<placement x="%center_x%" y="%busy_text_l%" placement="4"/>
+				<condition var1="navbar_disable" op="!=" var2="1"/>
+				<text>Starting Aroma Magisk Manager...</text>
+			</text>
+			<text style="bs_text">
+				<placement x="%center_x%" y="%busy_text%" placement="4"/>
+				<condition var1="navbar_disable" var2="1"/>
+				<text>Starting Aroma Magisk Manager...</text>
+			</text>
+			
+			<action>
+				<condition var1="tw_operation_state" var2="1"/>
+				<action function="set">tw_signed_zip_verify=%tw_signed_zip_verify_tmp%</action>
+			</action>
+			
+			<action>
+				<condition var1="tw_operation_state" var2="1"/>
+				<condition var1="tw_operation_status" op="!=" var2="0"/>
+				<action function="set">install_back=main</action>
+				<action function="page">flash_done</action>
+			</action>
+			
+			<action>
+				<condition var1="tw_operation_state" var2="1"/>
+				<condition var1="tw_operation_status" var2="0"/>
+				<action function="page">main</action>
+			</action>
+		</page>
+
+	</pages>
+</recovery>

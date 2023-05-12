@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<recovery>
+	<pages>
+		<page name="fastbootd">
+			<template name="body"/>
+
+			<template name="ab"/>
+
+			<template name="statusbarinfo"/>
+
+			<button>
+				<placement x="%ab_back_x%" y="%ab_y%"/>
+				<image resource="actionbar_back" highlightresource="actionbar_back_hl"/>
+				<action function="page">main</action>
+			</button>
+
+			<text style="text_ab_title">
+				<placement x="%col1_x_indent%" y="%ab_bc_y%"/>
+				<text>{@reboot_btn=Reboot}</text>
+			</text>
+
+
+			<action>
+				<touch key="home"/>
+				<action function="page">main</action>
+			</action>
+
+			<action>
+				<touch key="back"/>
+				<action function="page">main</action>
+			</action>
+		</page>
+		<page name="reboot_system_routine">
+			<action>
+				<action function="set">tw_back=reboot</action>
+				<action function="set">tw_action_param=system</action>
+				<action function="set">tw_reboot_param=system</action>
+				<action function="page">rebootcheck</action>
+			</action>
+		</page>
+	</pages>
+</recovery>
