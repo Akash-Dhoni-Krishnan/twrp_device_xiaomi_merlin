@@ -42,7 +42,7 @@ ifeq ($(TARGET_USERIMAGES_USE_F2FS), true)
 endif
 ifeq ($(BOARD_HAS_NO_REAL_SDCARD),)
     TWRP_REQUIRED_MODULES += sgdisk
-Endif
+endif
 ifneq ($(TW_INCLUDE_CRYPTO),)
 TWRP_REQUIRED_MODULES += \
     vold_prepare_subdirs \
