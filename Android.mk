@@ -33,6 +33,24 @@ endif
 ifeq ($(BOARD_HAS_NO_REAL_SDCARD),)
     TWRP_REQUIRED_MODULES += sgdisk
 endif
+LOCAL_SRC_FILES := \
+    twrp.cpp \
+    fixContexts.cpp \
+    twrpTar.cpp \
+    exclude.cpp \
+    find_file.cpp \
+    infomanager.cpp \
+    data.cpp \
+    partition.cpp \
+    partitionmanager.cpp \
+    progresstracking.cpp \
+    twinstall.cpp \
+    twrp-functions.cpp \
+    twrpDigestDriver.cpp \
+    openrecoveryscript.cpp \
+    tarWrite.c \
+    twrpAdbBuFifo.cpp
+
 ifeq ($(TW_INCLUDE_JB_CRYPTO), true)
     TW_INCLUDE_CRYPTO := true
 endif
